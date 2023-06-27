@@ -8,7 +8,7 @@ TuGraph是一个高性能图数据库，它支持标准的Cypher查询语言，�
 - 如何编写rust-tugraph插件
 - 如何在TuGraph中上传及使用rust插件
 
-本教程所有代码都在[这里](https://github.com/antkiller996/tugraph-movie-friend)。
+本教程所有代码都在[这里](https://github.com/antkiller996/rust-tugraph-plugin-tutorial)。
 
 
 # 搭建开发环境
@@ -25,7 +25,7 @@ Dev Containers插件：请参考[Dev Containers插件](https://marketplace.visua
 ![插件显示Dev Containers安装成功](screenshots/dev_container.png)
 
 ## 使用Dev Containers插件搭建开发环境
-新建一个项目目录，取名为`rust-tugraph-plugin-tutorial`，然后在项目目录下新建一个`.devcontainer`目录，将[.devcontainer](https://github.com/antkiller996/tugraph-movie-friend/tree/master/.devcontainer)
+新建一个项目目录，取名为`rust-tugraph-plugin-tutorial`，然后在项目目录下新建一个`.devcontainer`目录，将[.devcontainer](https://github.com/antkiller996/rust-tugraph-plugin-tutorial/tree/master/.devcontainer)
 下的内容全部拷贝到`.devcontainer`目录下。然后在vscode中打开项目目录，vscode会自动检测到`.devcontainer`目录下的配置文件，提示你是否打开一个新的容器化的开发环境，点击`Reopen in Container`按钮，vscode会自动构建一个容器化的开发环境。如果没有提示，你也可以通过vscode的命令面板(Ctrl+Shift+P或者Cmd+P)输入`Dev Containers: Reopen in Container`来打开容器化的开发环境。
 
 在第一次打开容器化的开发环境时，vscode会自动下载容器镜像，这个过程可能会比较慢，请耐心等待⌛️。构建完毕时，使用 `cargo version` 来检测你是否拥有rust开发环境，如果你看到如下输出，那么恭喜你，你已经拥有了rust开发环境。
@@ -89,7 +89,7 @@ CREATE
 
 
 
-[Cypher查询语言]: (https://github.com/TuGraph-family/tugraph-db/blob/master/doc/zh-CN/source/5.developer-manual/6.interface/1.cypher.md)
+[Cypher查询语言]: https://github.com/TuGraph-family/tugraph-db/blob/master/doc/zh-CN/source/5.developer-manual/6.interface/1.cypher.md
 
 # 使用Rust语言编写插件
 
@@ -242,3 +242,4 @@ cargo build --release -j 8
 
 ## 使用插件
 ![使用插件](screenshots/call_plugin.png)
+
