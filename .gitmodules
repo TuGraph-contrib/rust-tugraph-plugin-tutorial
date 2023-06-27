@@ -1,0 +1,3 @@
+[submodule "tugraph-db"]
+	path = tugraph-db
+	url = https://github.com/TuGraph-family/tugraph-db
